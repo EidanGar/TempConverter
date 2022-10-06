@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Temperature Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="temperature_converter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="Converter">
+            <fieldset>
+                <h1 id="title">Temperature Converter</h1>
+                <div class="convert">
+                    <h2 class="num">Convert <input id="convert" type="number"></h2>
+                    <h2 class="num">From <select required id="from">
+                        <option hidden value="">Choose Temperature</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select></h2>
+                    <h2 class="con">To <select required id="to">
+                        <option hidden value="">Choose Temperature</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select></h2>
+                    <div class="btn">
+                        <button id="myButton">Convert</button>
+                        <button id="resetBtn">Reset</button>
+                    </div>
+                    <h2 id="result"></h2>
+                </div>
+            </fieldset>
+        </div>
+
+        <datalist id="temps">
+            <option value="Fahrenheit">
+            <option value="Celsius">
+        </datalist>
+
+        <script src="temperature_converter.js" async defer></script>
+
+    </body>
+</html>
